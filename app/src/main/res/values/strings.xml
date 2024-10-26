@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aural Log</string>
+    <string name="web_client_id">324822100917-dsa76aurggjij8nbuhfbqqfesgu4vneq.apps.googleusercontent.com</string>
+    <string name="checking_noise_levels">Checking noise levels...</string>
+    <string name="close">Close</string>
+</resources>

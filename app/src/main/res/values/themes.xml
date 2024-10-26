@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme for the AppCompat library -->
+    <style name="Theme.MyHome02" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <!-- For example, setting primary color -->
+        <item name="colorPrimary">@color/your_primary_color</item>
+        <item name="colorPrimaryDark">@color/your_primary_dark_color</item>
+        <item name="colorAccent">@color/your_accent_color</item>
+    </style>
+
+</resources>

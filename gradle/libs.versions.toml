@@ -1,0 +1,104 @@
+[versions]
+agp = "8.5.2"
+androidGradleVersion = "8.5.2"
+coilCompose = "2.2.2"
+core = "1.45.0"
+credentials = "1.3.0"
+firebaseAuth = "23.0.0"
+firebaseAuthKtx = "23.0.0"  # Updated to actual stable version
+googleFirebaseAuth = "23.0.0"  # Updated to actual stable version
+googleid = "1.1.1"
+googleSceneformVersion = "1.17.1"
+googleServices = "4.4.2"
+googleServicesVersion = "4.4.2"
+gradle = "8.0.2"
+gradleVersion = "8.1.4"
+identity = "1.1.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinGradlePlugin = "1.9.0"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.2"
+composeBom = "2024.09.03"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.2"
+constraintlayout = "2.1.4"
+firebaseBom = "33.4.0"
+material3 = "1.3.0"
+mpandroidchart = "v3.1.0"
+gson = "2.10.1"
+glide = "4.15.1"
+volley = "1.2.1"
+arcore = "1.32.0"
+googleSceneformRenderingVersion = "1.16.0"  # Update the version to match available ones
+playServicesAuth = "21.2.0"
+
+
+
+[libraries]
+android-gradle-v851 = { module = "com.android.tools.build:gradle", version.ref = "androidGradleVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+com-google-ar-sceneform-sceneform = { module = "com.google.ar.sceneform:sceneform", version.ref = "googleSceneformVersion" }
+com-google-firebase-firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+core = { module = "com.google.ar:core", version.ref = "core" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+google-services-v4315 = { module = "com.google.gms:google-services", version.ref = "googleServicesVersion" }
+googleid = { module = "com.google.android.libreries.identity.googleid:googleid", version.ref = "googleid" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+gradle-v810 = { module = "com.android.tools.build:gradle", version.ref = "gradleVersion" }
+identity = { module = "com.google.android.libraries.identity:identity", version.ref = "identity" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePlugin" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+sceneform-ux = { module = "com.google.ar.sceneform.ux:sceneform-ux", version.ref = "googleSceneformVersion" }
+sceneform-rendering = { module = "com.google.ar.sceneform.rendering:sceneform-rendering", version.ref = "googleSceneformRenderingVersion" }
+
+
+# Firebase dependencies
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+
+# MPAndroidChart
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+
+# Gson
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+# Volley
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }

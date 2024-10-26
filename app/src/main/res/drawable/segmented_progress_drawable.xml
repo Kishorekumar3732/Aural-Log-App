@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="4dp"/>
+            <solid android:color="#e0e0e0"/> <!-- Light gray color for unfilled segments -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <layer-list>
+                <!-- Draw individual segments for the progress bar -->
+                <item>
+                    <shape>
+                        <corners android:radius="4dp"/>
+                        <size android:width="20dp" android:height="20dp"/>
+                        <solid android:color="#ffa726"/>
+                    </shape>
+                </item>
+            </layer-list>
+        </clip>
+    </item>
+</layer-list>

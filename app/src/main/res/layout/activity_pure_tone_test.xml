@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".PureToneTestActivity">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audiometry Test"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Current Sound Level Display -->
+    <TextView
+        android:id="@+id/soundLevelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Sound Level: 30 dB"
+        android:textSize="18sp"
+        android:textColor="@color/secondary_text"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Play Tone Button -->
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Tone"
+        android:background="@drawable/button_background"
+        android:textColor="@color/button_text"
+        android:layout_below="@id/startExamButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Start Exam Button -->
+    <Button
+        android:id="@+id/startExamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Exam"
+        android:background="@drawable/button_background"
+        android:textColor="@color/button_text"
+        android:layout_below="@id/soundLevelTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Horizontal LinearLayout for Can Hear and Cannot Hear Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playButton"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <!-- Can Hear Button -->
+        <Button
+            android:id="@+id/canHearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Can Hear"
+            android:background="@drawable/button_background_green"
+            android:textColor="@color/button_text"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Cannot Hear Button -->
+        <Button
+            android:id="@+id/cannotHearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cannot Hear"
+            android:background="@drawable/button_background_red"
+            android:textColor="@color/button_text"/>
+    </LinearLayout>
+
+    <!-- Results TextView -->
+    <TextView
+        android:id="@+id/resultsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results will appear here"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:background="@color/result_background"
+        android:padding="16dp"
+        android:layout_below="@id/buttonContainer"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

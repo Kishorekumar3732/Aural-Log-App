@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/resultsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Results"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <!-- Letters Test Graph -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Letters Test Results"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lettersChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <!-- Letters Test Inputs and Played Sounds -->
+            <TextView
+                android:id="@+id/lettersResultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Numbers Test Graph -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numbers Test Results"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/numbersChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <!-- Numbers Test Inputs and Played Sounds -->
+            <TextView
+                android:id="@+id/numbersResultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_green_light"
+                android:padding="8dp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Words Test Graph -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Words Test Results"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/wordsChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <!-- Words Test Inputs and Played Sounds -->
+            <TextView
+                android:id="@+id/wordsResultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_red_light"
+                android:padding="8dp"
+                android:textColor="@android:color/black"/>
+
+            <!-- Combined Average Graph -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combined Average Results"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/combinedChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <!-- Generate Report Button -->
+            <Button
+                android:id="@+id/generateReportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generate Report"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

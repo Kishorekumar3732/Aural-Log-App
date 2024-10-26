@@ -1,0 +1,6 @@
+<resources>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_animation</item>
+        <item name="android:windowExitAnimation">@anim/popup_animation</item>
+    </style>
+</resources>

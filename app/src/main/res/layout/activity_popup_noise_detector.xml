@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/noise_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checking noise levels..."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/current_db_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current dB: 0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/average_db_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average dB: 0"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/noise_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_marginTop="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/timer_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_gravity="center" />
+</LinearLayout>

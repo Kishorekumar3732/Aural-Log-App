@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Timer TextView for showing real-time counter -->
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Time: 30" />
+
+        <!-- TextView for displaying instructions and results -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_below="@id/timerTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <!-- EditText for typing answers for Letter/Number Test -->
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultTextView"
+            android:hint="Enter your answer"
+            android:inputType="text"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <!-- Button for submitting answers -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="225dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/inputEditText"
+            android:text="Submit"
+            android:visibility="gone" />
+
+        <!-- Button for replaying the current round -->
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:layout_below="@id/submitButton"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <!-- GridLayout for Letter Test -->
+        <GridLayout
+            android:id="@+id/letterGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playAgainButton"
+            android:layout_marginTop="16dp"
+            android:columnCount="3"
+            android:visibility="gone"
+            android:padding="8dp" />
+
+        <!-- GridLayout for Number Test -->
+        <GridLayout
+            android:id="@+id/numberGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playAgainButton"
+            android:layout_marginTop="16dp"
+            android:columnCount="3"
+            android:visibility="gone"
+            android:padding="8dp" />
+
+        <!-- GridLayout for Word Test (Image Test) -->
+        <GridLayout
+            android:id="@+id/imageGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playAgainButton"
+            android:layout_marginTop="16dp"
+            android:columnCount="3"
+            android:visibility="gone"
+            android:padding="8dp">
+            <!-- ImageView for words will be dynamically added in Kotlin -->
+        </GridLayout>
+
+        <!-- BarChart for showing test results -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/imageGrid"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/showResultsButton"
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Show Results"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <!-- Profile image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_placeholder"
+        android:contentDescription="Profile Image"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/edit_profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/edit_profile_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Phone -->
+    <EditText
+        android:id="@+id/edit_profile_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:digits="0123456789"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Address -->
+    <EditText
+        android:id="@+id/edit_profile_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Date of Birth -->
+    <Button
+        android:id="@+id/button_dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth (dd/mm/yyyy)"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <!-- Gender Title -->
+    <TextView
+        android:id="@+id/text_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        app:layout_constraintTop_toBottomOf="@id/button_dob"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="8dp"/>
+
+    <!-- Gender -->
+    <Spinner
+        android:id="@+id/spinner_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/gender_array"
+        app:layout_constraintTop_toBottomOf="@id/text_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Bio -->
+    <EditText
+        android:id="@+id/edit_profile_bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bio (max 50 characters)"
+        android:maxLength="50"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/spinner_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:minHeight="48dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/edit_profile_bio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        app:layout_constraintTop_toBottomOf="@id/button_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
