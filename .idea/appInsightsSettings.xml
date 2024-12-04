@@ -6,10 +6,10 @@
         <entry key="Android Vitals">
           <value>
             <InsightsFilterSettings>
-              <option name="failureTypes">
-                <list>
-                  <option value="ANR" />
-                </list>
+              <option name="connection">
+                <ConnectionSetting>
+                  <option name="appId" value="com.project01.myhome02" />
+                </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
               <option name="timeIntervalDays" value="SEVEN_DAYS" />
@@ -22,8 +22,8 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.myhome02" />
-                  <option name="mobileSdkAppId" value="1:181593980983:android:1104dbf3ed4103ba99ffb2" />
+                  <option name="appId" value="com.project01.myhome02" />
+                  <option name="mobileSdkAppId" value="1:181593980983:android:9533d08cd52923ed99ffb2" />
                   <option name="projectId" value="aural-log-392b4" />
                   <option name="projectNumber" value="181593980983" />
                 </ConnectionSetting>

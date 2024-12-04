@@ -51,6 +51,7 @@ core = { module = "com.google.ar:core", version.ref = "core" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 firebase-auth-ktx = { module = "com.google.firebase:firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
 google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
 google-services-v4315 = { module = "com.google.gms:google-services", version.ref = "googleServicesVersion" }
 googleid = { module = "com.google.android.libreries.identity.googleid:googleid", version.ref = "googleid" }

@@ -8,15 +8,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myhome02"
+    namespace = "com.project01.myhome02"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.myhome02"
+        applicationId = "com.project01.myhome02"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -65,6 +65,8 @@ dependencies {
     implementation(libs.firebase.auth.ktx) // Firebase Auth KTX
     implementation(libs.play.services.auth) // Google Play Services Auth
     implementation(libs.com.google.firebase.firebase.auth)
+    implementation (libs.firebase.firestore.ktx)
+
 
     // For authentication with Google using Credential Manager
     implementation ("com.google.android.gms:play-services-auth:21.2.0")
@@ -77,7 +79,7 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata:1.7.3")
 
     // For navigation
-    implementation("androidx.navigation:navigation-compose:2.8.2")
+    implementation("androidx.navigation:navigation-compose:2.8.3")
 
     // Coil -> For showing image through url
     implementation("io.coil-kt:coil-compose:2.7.0")

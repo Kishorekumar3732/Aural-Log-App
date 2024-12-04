@@ -11,6 +11,7 @@
         android:layout_height="352dp"
         android:scaleType="centerCrop"
         android:src="@drawable/profile_screen_app_bar_bg"
+        android:contentDescription="@string/background_image_desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +23,7 @@
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
         android:src="@drawable/applogoremovebg"
+        android:contentDescription="@string/top_image_desc"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -31,7 +33,7 @@
         android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aural Log"
+        android:text="@string/app_name"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:paddingTop="8dp"
@@ -51,6 +53,8 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:translationY="-150dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/backgroundImage">
@@ -59,14 +63,16 @@
             android:id="@+id/googleSignInButton"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/orDivider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Or"
+            android:text="@string/or_text"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -75,11 +81,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_corners"
-            android:hint="Email"
+            android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
             android:padding="16dp"
+            android:importantForAutofill="yes"
             android:textColor="@android:color/black"
-            android:textColorHint="#B3B3B3" />
+            android:textColorHint="#757575" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -90,11 +97,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_corners"
-                android:hint="Password"
+                android:hint="@string/password_hint"
                 android:inputType="textPassword"
                 android:padding="16dp"
+                android:importantForAutofill="yes"
                 android:textColor="@android:color/black"
-                android:textColorHint="#B3B3B3" />
+                android:textColorHint="#757575" />
 
             <ImageView
                 android:id="@+id/passwordToggle"
@@ -103,7 +111,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="8dp"
-                android:contentDescription="Toggle Password Visibility"
+                android:contentDescription="@string/password_toggle_desc"
                 android:src="@drawable/ic_visibility_off" />
         </RelativeLayout>
 
@@ -112,9 +120,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Forgot password?"
+            android:text="@string/forgot_password"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/logInButton"
@@ -122,16 +132,20 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/gradient_button_background"
-            android:text="Log In"
-            android:textColor="#FFFFFF" />
+            android:text="@string/login_button_text"
+            android:textColor="#FFFFFF"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/signUpLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Don’t have an account? Sign Up"
+            android:text="@string/sign_up_link"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

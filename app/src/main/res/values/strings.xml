@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Aural Log</string>
-    <string name="web_client_id">324822100917-dsa76aurggjij8nbuhfbqqfesgu4vneq.apps.googleusercontent.com</string>
+    <string name="web_client_id">181593980983-9bb96lfsttsc2rs8vbjhe2c2qnls9hs0.apps.googleusercontent.com</string>
     <string name="checking_noise_levels">Checking noise levels...</string>
     <string name="close">Close</string>
+    <string name="background_image_desc">Background Image</string>
+    <string name="top_image_desc">App Logo</string>
+    <string name="or_text">Or</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_button_text">Log In</string>
+    <string name="sign_up_link">Don’t have an account? Sign Up</string>
+    <string name="password_toggle_desc">Toggle Password Visibility</string>
+
 </resources>
